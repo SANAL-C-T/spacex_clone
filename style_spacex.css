@@ -1,0 +1,275 @@
+@font-face{
+    font-family: myfont;
+    src: url(./D-DIN-Bold.ttf);
+}
+@font-face{
+    font-family: amyfont;
+    src: url(./D-DIN.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{/* to default settings */
+    background-color: rgb(1, 0, 0);
+    padding:0;
+    margin:0;             
+}
+
+/*............. styling of header and its background starts here .............*/
+
+
+.first_background{/* super container to header class, also contain background image,button,typing. */
+    height:100vh;
+    background: url('./01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+
+}
+
+.header{/* super container of container class */
+/* border: 5px solid rgb(21, 255, 0); */
+background-size: cover;
+width: 100%;
+}
+
+.contar{
+    background-color: rgb(0, 10, 7);
+    height: 100px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+.logo{/* styling of logo of spacex,seperate div inside a container */
+display: block;
+margin-left: auto;
+position: absolute;
+top: 32px;
+left: 50px;
+width: 210px;
+
+/* border: 5px solid rgb(13, 112, 250); */
+}
+
+.navElement{/* styling of navigation elements,seperate div inside a container */
+    margin-left: 298px;
+    margin-top:29px;
+    margin-right: 42px;
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    
+    
+   
+}
+.text_first{
+    margin-top: 240px;
+    color: rgb(255, 255, 255);
+    margin-left:50px;
+    width:520px;
+
+    
+}
+.text_second{
+    margin-top: 300px;
+    color: rgb(255, 255, 255);
+    margin-left:50px;
+    width:520px;
+   
+
+}
+.text_third{
+    margin-top: 376px;
+    color: rgb(255, 255, 255);
+    margin-left:50px;
+    width:520px
+    
+}
+
+li{/* removing bullets from navigation elements*/
+   list-style-type: none;
+   font-family: amyfont;
+   font-size: 14px;
+   line-height: 20px;
+   margin-right: 25px;
+   position: relative;
+
+}
+
+li:nth-child(9){
+    margin-right: 180;
+}
+li:nth-child(8){
+    margin-right: 170px;
+}
+
+li::before{
+    content:" ";
+    position: absolute;
+    background-color: white;
+   right: 0;
+   bottom:0.01rem; 
+   height:1px;
+    width: 0;
+    transition:0.3s ease-in-out;
+}
+li:hover::before{
+    content:" ";
+    position:absolute;
+    background-color: white;
+   left: 0;
+  bottom:0.01rem;
+   height:1px; 
+    width: 100%;
+}
+
+/* .............styling of header and its background ends here............... */
+
+
+
+
+
+
+/* ..........styling of middel section and its background starts here...... */
+.second_background{
+    background-image: url('./PSN_Satria_pad39a_DSC_6855_desktop_6dd3f9c0d0.jpg');
+    height:100vh;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.third_background{
+    height:100vh;
+    background: url('./STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+/* ..........styling of middel section and its background ends here...... */
+
+
+
+
+
+
+/* ..........styling of footer section and its background starts here...... */
+
+.footer{/* super parent of footbox */
+background-color: black;
+height:68px;
+padding-top: 17px
+
+}
+
+
+.footbox{/* super parent to copyright and social menu */
+display: flex;
+justify-content: center;
+font-family: myfont;
+font-size: 12px;
+line-height: 24px;
+color: rgb(255, 255, 255);
+}
+
+.copyright{/*  holds copyright lettering  */
+color: white;
+
+padding-top: 10px;
+}
+
+.social_menu{/* holds all anchored social media links */
+    
+    display: flex;
+}
+
+
+/* anchor tag font and colour starts */
+.social_menu a{
+    color: white;
+    text-decoration: none;
+}
+.navElement a{
+    color: white;
+    text-decoration: none;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+/* anchor tag font and colour ends */
+
+
+
+
+/* styling text and button in middle section starts*/
+.launch{
+
+    line-height: 38px;
+    font-size: 20px;
+    font-family: amyfont;
+    
+} 
+.launch_name{
+    font-size: 24px;
+    font-family: myfont;
+}
+button{
+    width: 163px;
+    height:55px;
+    font-size: 14px;
+    font-family: myfont;
+    background-color: transparent; 
+    border-radius: 0%;
+    border-color:rgb(255, 255, 255);
+    border-width: 2px;
+    z-index: 1;
+    color: rgb(253, 250, 250);
+    border-style: solid;
+    position: relative;
+    transition: 0.3s all ease-in-out 0s; 
+    cursor: pointer; 
+}
+
+
+ button:before{
+   content: ""; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color:#fffdfdf5;
+    transition: 0.3s all ease-in-out 0s;  
+  
+  
+   
+} 
+
+button::before{
+    height: 0; 
+    color: rgb(0, 5, 5);
+        
+    
+}
+button:hover::before{
+    top:unset;
+    bottom: 0;
+    height: 100%;
+  z-index: -1;
+   
+
+}
+button:hover{
+    color: rgb(10, 6, 0);
+}
+.social_menu:hover a:hover{
+    color: rgb(148, 157, 153);
+    transition: 0.4s all ease-in-out 0.0s;
+}
